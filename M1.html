@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=decice-width,initial-scale=1.0" />
+     <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+   *{margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:"poppins",sens-serif;
+     }
+   
+   body{min-height:100vh;
+        background:url(https://i.ibb.co/4ZJrJtK/Contact.jpg);
+        background-size:cover;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        }
+        
+   .contact-section{width:100%;
+                    justify-content:center;
+                    display:flex;
+                    align-items:center;
+                    }
+                    
+   .contact-info{color:#fff;
+                 max-width:500px;
+                 line-height:65px;
+                 padding:50px;
+                 }  
+                        
+   .contact-info i{margin-right:25px;
+                   font-size:20px;
+                   }
+                   
+   .contact-form h2{color:#fff;
+                    text-align:center;
+                    font-size:35px;
+                    text-transform:uppercase;
+                    margin-bottom:35px;
+                    }
+                 
+    .contact-form .text-box{background:#000;
+                            color:#fff;
+                            border:none;
+                            width:calc(50%-10px);
+                            height:50px;
+                            padding:12px;
+                            font-size:15px;
+                            border-radius:5px;
+                            border-shadow:0 1px 1px rgba(0,0,0,0.1);
+                            margin-bottom:20px;
+                            opacity:0.9;
+                            }
+                            
+    .contact-form .text-box:first-child{margin-right:15px;
+                                        }
+                                        
+    .contact-form textarea{background:#000;
+                           color:#fff;
+                           border:none;
+                           width:100%;
+                           padding:15px;
+                           font-size:15px;
+                           min-height:200px;
+                           max-height:400px;
+                           resize:vertical;
+                           border-radius:5px;
+                           box-shadow:0 1px 1px rgba(0,0,0,0.1);
+                           margin-bottom:20px;
+                           opacity:0.9;}
+                           
+     .contact-form .send-btn{float:right;
+                              blackground:#2E94E3;
+                              color:#fff;
+                              border:none;
+                              width:120px;
+                              height:40px;
+                              font-size:15px;
+                              font-weight:600;
+                              text-transformation:uppercase;
+                              letter-spacing:2px;
+                              bprder-radius:5px;
+                              transition:0.3s
+                              transition-property:background;}
+                              
+      .contact-form .send-btn:hover{background:#0582E3;}
+      
+      @media screen and(max-width:950px)
+           .contact-section{flex-dirction:column;}
+           
+           .contact-info contact-form{margin:30px 50px;}
+           
+           .contact-form h2{font-size:30px;}
+           
+           .contact-form .text-box{wodth:100%;}
+           
+      
+</style>
+<body>
+   <div class="contact-section">
+     <div class="contact-info">
+       <div><i class="fa fa-map-marker" aria-hidden="true"></i>
+             Adress,City,country</div>
+       <div><i class="fa fa-envelope" aria-hidden="true"></i>
+             contact@email.com</div>
+       <div><i class="fa fa-phone" aria-hidden="true"></i>
+             +910000000000</div>
+       <div><i class="fa fa-clock" aria-hidden="true"></i>
+             Mon-Fri 8:00 AM to 5:00 PM</div>
+           <div class="contact-form">
+             <h2>Contact Us</h2>
+             <form class="contact" action="" method="post">
+               <input type="text" name="name" class="text-box"
+               	      placeholder="Your name">
+               <input type="email" name="email" class="text-box"
+                      placeholder="Your email">
+               <textarea name="message" rows="5" placeholder="Your message"></textarea>
+               <input type="submit" name="submit" class="send-btn" value="send">
+             </form>
+     </div>
+     </div>
+</body>
+</html>
